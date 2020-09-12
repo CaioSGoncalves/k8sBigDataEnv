@@ -8,8 +8,6 @@ Big Data environment provided in Kubernetes.
 | Process     | Spark    | EMR/Glue   | Dataproc/Dataflow  |
 | Query       | Presto   | Athena     | BigQuery           |
 | Visualize   | Metabase | Quicksight | DataStudio         |
-| Visualize   | Metabase | Quicksight | DataStudio         |
-| Visualize   | Metabase | Quicksight | DataStudio         |
 | Serve       | Hive     | Redshift   | BigQuery           |
 | Orquestrate | Argo     | CloudWatch | Composer           |
 | Stream      | Kafka    | Kinesis    | Pub/Sub + Dataflow |
