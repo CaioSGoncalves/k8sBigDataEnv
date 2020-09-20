@@ -12,7 +12,7 @@ spec:
       targetPort: 8888
   clusterIP: None
 
-
+# kubectl -n spark port-forward pod/jupyter-pod 3333:8888
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -33,11 +33,5 @@ spec:
       containers:
       - name: jupyter-spark
         image: caiosgon3/jupyter-spark-driver:latest
-        # command: ["ls"]
         ports:
         - containerPort: 8888
-
-        # code.oak-tree.tech:5005/courseware/oak-tree/dataops-examples/spark-k8s-jupyter
-# /usr/local/bin/jupyter-lab
-# - ./hdfs:/hdfs
-# - ./notebooks:/home/jovyan/work
