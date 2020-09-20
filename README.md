@@ -1,6 +1,18 @@
 # k8sBigDataEnv
 Big Data environment provided in Kubernetes.
 
+# Big Picture
+
+<p align="center"> 
+<img src="diagrams/flow.png">
+</p>
+
+
+Objectives:
+
+    - Create a development environment to learn and test Big Data technologies.
+    - Create a full infrastrucure for Big Data on Kubernetes.
+
 
 | Layer       | k8s      | AWS        | GCP                |
 |-------------|----------|------------|--------------------|
@@ -11,3 +23,21 @@ Big Data environment provided in Kubernetes.
 | Serve       | Hive     | Redshift   | BigQuery           |
 | Orquestrate | Argo     | CloudWatch | Composer           |
 | Stream      | Kafka    | Kinesis    | Pub/Sub + Dataflow |
+
+
+How it works:
+
+    - How it works
+    
+
+Folders:
+
+    - ./storage: Store namespace and resources
+
+
+References:
+
+    - https://youtu.be/muTqsay1ix4
+    - https://github.com/radanalyticsio/spark-operator
+
+

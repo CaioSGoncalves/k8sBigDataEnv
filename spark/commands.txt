@@ -1,0 +1,18 @@
+Create serviceAccount and cluterRole:
+kubectl create serviceaccount spark -n spark
+kubectl create clusterrolebinding spark-role --clusterrole=edit --serviceaccount=spark:spark --namespace=spark
+
+code.oak-tree.tech images:
+code.oak-tree.tech:5005/courseware/oak-tree/dataops-examples/spark-k8s-base
+code.oak-tree.tech:5005/courseware/oak-tree/dataops-examples/spark-k8s-driver
+code.oak-tree.tech:5005/courseware/oak-tree/dataops-examples/spark-k8s-jupyter
+
+Build docker images:
+docker build . -t caiosgon3/jupyter-spark-driver:latest
+docker push caiosgon3/jupyter-spark-driver:latest
+
+docker build . -t caiosgon3/pyspark-base:latest
+docker push caiosgon3/pyspark-base:latest
+
+kubectl run jupyter-test-pod --generator=run-pod/v1 -it --rm=true --image=code.oak-tree.tech:5005/courseware/oak-tree/dataops-examples/spark-k8s-jupyter --serviceaccount=spark --namespace=spark --command -- jupyter lab --ip 0.0.0.0
+kubectl -n spark port-forward pod/jupyter-pod 3333:8888

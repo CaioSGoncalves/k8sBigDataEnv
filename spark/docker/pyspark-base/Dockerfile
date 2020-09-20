@@ -1,0 +1,1 @@
+FROM code.oak-tree.tech:5005/courseware/oak-tree/dataops-examples/spark-k8s-base
