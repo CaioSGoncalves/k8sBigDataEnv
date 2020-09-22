@@ -1,8 +1,10 @@
 # k8sBigDataEnv
 Big Data environment provided in Kubernetes.
 
-
+#### Sub Projects:
 Data Lake: https://github.com/CaioSGoncalves/k8sDataLake
+Data Processing: https://github.com/CaioSGoncalves/k8sDataProcessing
+Kafka Platform: https://github.com/CaioSGoncalves/k8sKafkaPlatform
 
 
 # Big Picture
