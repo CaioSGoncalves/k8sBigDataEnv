@@ -4,7 +4,7 @@ Big Data environment provided in Kubernetes.
 
 Sub projects:
 
-    - Data Lake: [Data Lake](https://github.com/CaioSGoncalves/k8sDataLake)
+    - Data Lake: http://github.com/CaioSGoncalves/k8sDataLake
 
 
 # Big Picture
